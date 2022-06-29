@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-5.0.dtd">     
+ 
+ <hibernate-mapping package="com.nt.entity"> 
+ <class name="com.nt.entity.EmpDetails" table="Employee">
+ <id name="no" length="10" type="int"/>
+ <property name="fname" length="20" type="string"/>
+ <property name="lname" length="10" type="string"/>
+ <property name="mail" length="20" type="string"/>
+ 
+ <generator class="increment"/> 
+ </class>
+ 
+ </hibernate-mapping>
+ 
+ 
